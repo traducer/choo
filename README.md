@@ -408,7 +408,7 @@ Send a new action to the models with optional data attached. Namespaced models
 can be accessed by prefixing the name with the namespace separated with a `:`,
 e.g. `namespace:name`.
 
-when sending data from inside a `model` it expects exactly three arguments: the name of the action you're calling, the data you want to send, and finally a callback to handle errors through the global `onError()` hook. So if you want to send two values, you'd have to either send an array or object containing them.
+When sending data from inside a `model` it expects exactly three arguments: the name of the action you're calling, the data you want to send, and finally a callback to handle errors through the global `onError()` hook. So if you want to send two values, you'd have to either send an array or object containing them.
 
 #### done(err?, res?)
 When an `effect` or `subscription` is done executing, or encounters an error,
